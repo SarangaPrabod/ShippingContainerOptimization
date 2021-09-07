@@ -637,7 +637,7 @@ export default function Home() {
                                             </Row>
                                             <Row>
                                                 <Col span="24" style={{ fontSize: '18px' }}>
-                                                    7 days
+                                                    7 day trial
                                                 </Col>
                                             </Row>
                                             <Row>
