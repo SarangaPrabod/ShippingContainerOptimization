@@ -1,4 +1,4 @@
-import { Col, Layout, Row, Button, Form, Input } from "antd";
+import { Col, Layout, Row, Button, Form, Input, Select } from "antd";
 import 'antd/dist/antd.css';
 import styles from "../../styles/home1.module.css";
 import { BsFillInboxesFill } from 'react-icons/bs';
@@ -33,6 +33,8 @@ const validateMessages = {
     },
 };
 
+const { Option } = Select;
+
 
 
 export default function Home() {
@@ -40,6 +42,10 @@ export default function Home() {
     const onFinish = (values) => {
         console.log(values);
     };
+
+    function handleChange(value) {
+        console.log(`selected ${value}`);
+    }
 
     return (
         <>
@@ -595,7 +601,7 @@ export default function Home() {
                     <div style={{ backgroundColor: '#dbf9ff' }}>
 
                         <div style={{ padding: '0px 0px 20px 0' }}>
-                            <Row gutter={15}>
+                            <Row >
                                 <Col span={24}>
                                     <div className={styles.hedingWhite} style={{ color: "#0076BE" }} >
                                         <p> Price list for version &nbsp;<BsFillInboxesFill /> goodlanding Pro </p>
@@ -605,7 +611,7 @@ export default function Home() {
                         </div>
 
                         <div style={{ padding: '0px 0px 100px 0' }} >
-                            <Row>
+                            <Row gutter={15}>
 
                                 <Col span={5} offset={2} >
 
@@ -614,19 +620,19 @@ export default function Home() {
                                             <Col span={24}>
                                                 <div style={{
                                                     padding: '15px 0px 10px 0',
-                                                    backgroundColor: "#0076BE",
+                                                    backgroundColor: "#98C1D9",
                                                     borderTopRightRadius: '10px',
                                                     borderTopLeftRadius: '10px'
                                                 }} >
                                                     <h3 className={styles.h3} style={{ color: "#F0F2F5" }}>
-                                                        Subscription 3 months</h3>
+                                                        Check if it is worth</h3>
                                                 </div>
                                             </Col>
                                         </Row>
                                         <div >
                                             <Row gutter={15} align="bottom" >
-                                                <Col span={24} style={{ fontSize: "70px" }}>
-                                                    13 <Text style={{ fontSize: "20px", color: "#0076BE" }}>EUR</Text>
+                                                <Col span={24} style={{ fontSize: "70px", color: '#98C1D9' }}>
+                                                    2 <Text style={{ fontSize: "20px", color: "#98C1D9" }}>EUR</Text>
                                                 </Col>
                                             </Row>
                                             <Row>
@@ -649,13 +655,8 @@ export default function Home() {
                                             </Row>
                                             <Row>
 
-                                                <Col span={20} offset={2} style={{ padding: '30px 0px 0px 0px' }}>
-                                                    <select name="cars" id="cars">
-                                                        <option value="volvo">Volvo</option>
-                                                        <option value="saab">Saab</option>
-                                                        <option value="opel">Opel</option>
-                                                        <option value="audi">Audi</option>
-                                                    </select>
+                                                <Col span={20} offset={2} style={{ padding: '40px 0px 0px 0px' }}>
+                                                    10 Users
                                                 </Col>
                                             </Row>
 
@@ -672,6 +673,233 @@ export default function Home() {
                                     </div>
 
                                 </Col>
+
+                                <Col span={5} >
+
+                                    <div className={styles.sec7} >
+                                        <Row >
+                                            <Col span={24}>
+                                                <div style={{
+                                                    padding: '15px 0px 10px 0',
+                                                    backgroundColor: "#3D5A80",
+                                                    borderTopRightRadius: '10px',
+                                                    borderTopLeftRadius: '10px'
+                                                }} >
+                                                    <h3 className={styles.h3} style={{ color: "#F0F2F5" }}>
+                                                        Subscription 1 months</h3>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <div >
+                                            <Row gutter={15} align="bottom" >
+                                                <Col span={24} style={{ fontSize: "70px", color: '#3D5A80' }}>
+                                                    20 <Text style={{ fontSize: "20px", color: "#3D5A80" }}>EUR</Text>
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col span="24" style={{ fontSize: '18px' }}>
+                                                    per month
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col span={20} offset={2}>
+                                                    <div style={{ padding: '10px 0px 15px 0px' }}>
+                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                    </div>
+                                                </Col>
+                                            </Row>
+
+                                            <Row>
+                                                <Col span={24} style={{ fontWeight: "bolder" }}>
+                                                    Number of Users
+                                                </Col>
+                                            </Row>
+                                            <Row>
+
+                                                <Col span={20} offset={2} style={{ padding: '30px 0px 0px 0px' }}>
+                                                    <Select
+                                                        style={{ width: '100%' }}
+                                                        onChange={handleChange}
+                                                        placeholder="Select a plan"
+                                                        bordered={false}
+                                                        className={styles.select}
+
+                                                    >
+                                                        <Option value="jack" className={styles.select} >
+                                                            1 user + 0 USD/month</Option>
+                                                        <Option value="lucy" className={styles.select}>
+                                                            5 user + 20 USD/month</Option>
+                                                        <Option value="disabled" className={styles.select}>
+                                                            10 user + 37 USD/month</Option>
+                                                    </Select>
+                                                </Col>
+                                            </Row>
+
+                                            <Row>
+                                                <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
+                                                    <Button shape="round" className={styles.btn} >
+                                                        Register
+                                                    </Button>
+                                                </Col>
+
+                                            </Row>
+
+                                        </div>
+                                    </div>
+
+                                </Col>
+
+                                <Col span={5}>
+
+                                    <div className={styles.sec7} >
+                                        <Row >
+                                            <Col span={24}>
+                                                <div style={{
+                                                    padding: '15px 0px 10px 0',
+                                                    backgroundColor: "#293241",
+                                                    borderTopRightRadius: '10px',
+                                                    borderTopLeftRadius: '10px'
+                                                }} >
+                                                    <h3 className={styles.h3} style={{ color: "#F0F2F5" }}>
+                                                        Subscription 3 months</h3>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <div >
+                                            <Row gutter={15} align="bottom" >
+                                                <Col span={24} style={{ fontSize: "70px", color: "#293241" }}>
+                                                    17 <Text style={{ fontSize: "20px", color: "#293241" }}>EUR</Text>
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col span="24" style={{ fontSize: '18px' }}>
+                                                    per month
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col span={20} offset={2}>
+                                                    <div style={{ padding: '10px 0px 15px 0px' }}>
+                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                    </div>
+                                                </Col>
+                                            </Row>
+
+                                            <Row>
+                                                <Col span={24} style={{ fontWeight: "bolder" }}>
+                                                    Number of Users
+                                                </Col>
+                                            </Row>
+                                            <Row>
+
+                                                <Col span={20} offset={2} style={{ padding: '30px 0px 0px 0px' }}>
+                                                    <Select
+                                                        style={{ width: '100%' }}
+                                                        onChange={handleChange}
+                                                        placeholder="Select a plan"
+                                                        bordered={false}
+                                                        className={styles.select}
+
+                                                    >
+                                                        <Option value="jack" className={styles.select} >
+                                                            1 user + 0 USD/month</Option>
+                                                        <Option value="lucy" className={styles.select}>
+                                                            5 user + 20 USD/month</Option>
+                                                        <Option value="disabled" className={styles.select}>
+                                                            10 user + 37 USD/month</Option>
+                                                    </Select>
+                                                </Col>
+                                            </Row>
+
+                                            <Row>
+                                                <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
+                                                    <Button shape="round" className={styles.btn} >
+                                                        Register
+                                                    </Button>
+                                                </Col>
+
+                                            </Row>
+
+                                        </div>
+                                    </div>
+
+                                </Col>
+
+                                <Col span={5}>
+
+                                    <div className={styles.sec7} >
+                                        <Row >
+                                            <Col span={24}>
+                                                <div style={{
+                                                    padding: '15px 0px 10px 0',
+                                                    backgroundColor: "#EE6C4D",
+                                                    borderTopRightRadius: '10px',
+                                                    borderTopLeftRadius: '10px'
+                                                }} >
+                                                    <h3 className={styles.h3} style={{ color: "#F0F2F5" }}>
+                                                        Subscription 12 months</h3>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <div >
+                                            <Row gutter={15} align="bottom" >
+                                                <Col span={24} style={{ fontSize: "70px", color: '#EE6C4D' }}>
+                                                    13 <Text style={{ fontSize: "20px", color: '#EE6C4D' }}>EUR</Text>
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col span="24" style={{ fontSize: '18px' }}>
+                                                    per month
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col span={20} offset={2}>
+                                                    <div style={{ padding: '10px 0px 15px 0px' }}>
+                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                    </div>
+                                                </Col>
+                                            </Row>
+
+                                            <Row>
+                                                <Col span={24} style={{ fontWeight: "bolder" }}>
+                                                    Number of Users
+                                                </Col>
+                                            </Row>
+                                            <Row>
+
+                                                <Col span={20} offset={2} style={{ padding: '30px 0px 0px 0px' }}>
+                                                    <Select
+                                                        style={{ width: '100%' }}
+                                                        onChange={handleChange}
+                                                        placeholder="Select a plan"
+                                                        bordered={false}
+                                                        className={styles.select}
+
+                                                    >
+                                                        <Option value="jack" className={styles.select}>
+                                                            1 user + 0 USD/month</Option>
+                                                        <Option value="lucy" className={styles.select}>
+                                                            5 user + 20 USD/month</Option>
+                                                        <Option value="disabled" className={styles.select}>
+                                                            10 user + 37 USD/month</Option>
+                                                    </Select>
+                                                </Col>
+                                            </Row>
+
+                                            <Row>
+                                                <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
+                                                    <Button shape="round" className={styles.btn} >
+                                                        Register
+                                                    </Button>
+                                                </Col>
+
+                                            </Row>
+
+                                        </div>
+                                    </div>
+
+                                </Col>
+
+
 
 
 

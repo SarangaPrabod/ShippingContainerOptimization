@@ -218,6 +218,14 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 
+.select{
+  font-family: 'Roboto', sans-serif;
+  color:#0076BE;
+  font-size: 15px;
+  text-align: center;
+
+}
+
 .contact{
   padding: 60px 0px 60px 0px;
   background-color: #033E86;
@@ -258,3 +266,5 @@
   text-align: center;
   padding: 10px 0px 10px 0;
 }
+
+
