@@ -17,16 +17,23 @@ export default function Head() {
                     <Row style={{ textAlign: "center" }}>
 
                         <Col span={6} onClick={() => scroll.scrollToTop()}>
-                            <Link href="/">
-                                <a> <BsFillInboxesFill /> Goodloading </a>
+                            <Link href="/" >
+                                <a style={{ color: '#0090D1' }}> <BsFillInboxesFill /> Goodloading </a>
                             </Link>
                         </Col>
 
-                        <Col span={2} offset={4} className={styles.pages}>
-                            <Lnk to="priceList" smooth={true} >price list</Lnk>
+                        <Col span={2} offset={4} >
+                            <Lnk to="priceList" smooth={true} className={styles.pages}>
+                                price list</Lnk>
                         </Col>
 
-                        <Col span={2} className={styles.pages}>instruction</Col>
+                        <Col span={2} >
+                            <Link href="/instruction" >
+                                <Lnk to="/instruction" smooth={true} className={styles.pages} onClick={() => scroll.scrollToTop()}>
+                                    instruction</Lnk>
+                            </Link>
+
+                        </Col>
 
                         <Col span={2} className={styles.pages}>blog</Col>
 
@@ -34,8 +41,10 @@ export default function Head() {
 
                         <Col span={2} className={styles.pages}>faq</Col>
 
-                        <Col span={2} className={styles.pages}>
-                            <Lnk to="contact" smooth={true} >contact</Lnk>
+                        <Col span={2} >
+                            <Lnk to="contact" smooth={true} className={styles.pages}>
+                                contact
+                            </Lnk>
                         </Col>
 
                         <Col span={2}><Button shape="round" className={styles.btn}>

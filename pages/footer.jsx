@@ -2,7 +2,7 @@ import { Col, Layout, Row, } from "antd";
 import 'antd/dist/antd.css';
 import styles from "../styles/home.module.css";
 
-export default function foot() {
+export default function Foot() {
 
 
     return (

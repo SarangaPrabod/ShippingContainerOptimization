@@ -908,8 +908,8 @@ export default function Home() {
 
                             <div className={styles.contact}>
 
-                                <Row>
-                                    <Col span={18} offset={4} style={{ fontSize: "30px", padding: '0px 0px 20px opx' }}>
+                                <Row style={{ padding: '0px 0px 20px 0px' }}>
+                                    <Col span={18} offset={4} style={{ fontSize: "30px" }}>
                                         Contact
                                     </Col>
                                 </Row>
@@ -924,7 +924,7 @@ export default function Home() {
                                             </Col>
 
                                             <Col span={21}>
-                                                <a href="#" className={styles.link2}>info@inoovalab.org</a>
+                                                <a href="#" className={styles.link2}>info @inoovalab.org</a>
                                             </Col>
                                         </Row>
 
@@ -935,7 +935,7 @@ export default function Home() {
 
                                             <Col span={21}>
                                                 Inoovalab Technologies (Pvt) Ltd, <br />
-                                                No. 11, <br />
+                                                No.11, <br />
                                                 Castle Lane, <br />
                                                 Colombo 04, <br />
                                                 Sri Lanka<br />
@@ -1028,7 +1028,7 @@ export default function Home() {
 
                 </Content>
 
-            </Layout>
+            </Layout >
 
 
         </>

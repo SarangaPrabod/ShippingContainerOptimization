@@ -145,7 +145,7 @@ export default function LogIn() {
 
                                     <Col span={12}>
                                         <Form.Item
-                                            name="password"
+                                            name="re-password"
                                             rules={[{ required: true, message: 'Please input your password!' }]}
                                         >
                                             <Input.Password placeholder="Password re-enter" />
