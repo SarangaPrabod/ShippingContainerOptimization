@@ -33,7 +33,7 @@ export default function LogIn() {
                     <Row>
                         <Col span={20} offset={2} className={styles.logo}>
 
-                            <BsFillInboxesFill /> Goodloading
+                            <BsFillInboxesFill /> ShippingOpt
 
 
                         </Col>
@@ -41,7 +41,7 @@ export default function LogIn() {
                     <Row>
                         <Col span={20} offset={2} className={styles.title}>
 
-                            Welcome to Goodloading
+                            Welcome to ShippingOpt
 
                         </Col>
                     </Row>
@@ -50,7 +50,7 @@ export default function LogIn() {
                         <Col span={20} offset={2} className={styles.title2}>
 
                             Free demo version. <br />
-                            Test the full functionality for 2$.
+                            Test the full functionality for 0$.
 
                         </Col>
                     </Row>

@@ -10,19 +10,17 @@ import Image from "next/image";
 import ReactPlayer from "react-player/youtube";
 import Text from "antd/lib/typography/Text";
 
-
-
-
 import img1 from "../public/1.png"
 import img2 from "../public/2.png"
 import cont1 from "../public/cont1.png"
 import cont2 from "../public/cont2.png"
 import cont3 from "../public/cont3.png"
 import cont4 from "../public/cont4.png"
-import func1 from "../public/func1.jpg"
-import func2 from "../public/func2.jpg"
-import func3 from "../public/func3.jpg"
-import func4 from "../public/func4.jpg"
+
+import one from "../public/one.png"
+import two from "../public/two.png"
+import three from "../public/three.png"
+import four from "../public/four.png"
 
 const { Content } = Layout;
 
@@ -115,13 +113,13 @@ export default function Home() {
 
                                     <Col span={6} offset={4}>
                                         <div >
-                                            <Image src={img1} height={270} />
+                                            {/* <Image src={img1} height={270} /> */}
                                         </div>
                                     </Col>
 
                                     <Col span={6} offset={4}>
                                         <div >
-                                            <Image src={img2} />
+                                            {/* <Image src={img2} /> */}
                                         </div>
                                     </Col>
 
@@ -136,7 +134,7 @@ export default function Home() {
                                 <Row >
                                     <Col span={24}>
                                         <div className={styles.hedingBlue}>
-                                            Goodloading clients
+                                            ShippingOpt clients
                                         </div>
                                     </Col>
                                 </Row>
@@ -184,7 +182,7 @@ export default function Home() {
                                             <Row>
                                                 <div style={{ color: "white", textAlign: 'center', padding: '10px' }} >
                                                     <h2 style={{ color: "white", fontSize: "20px" }}>MANUFACTURES</h2>
-                                                    <p>With Goodloading you can choose an optimal way of loading and
+                                                    <p>With ShippingOpt you can choose an optimal way of loading and
                                                         send a PDF presenting its arrangement. Additionally, to
                                                         avoid “transporting air”, it is possible to check
                                                         how much load a given cargo space can accommodate.</p>
@@ -236,12 +234,12 @@ export default function Home() {
                                                 and if there is any space left, plan an added load.
                                             </p>
                                             <a className={styles.hoverUnderlineAnimation} href="#">
-                                                <b>Try Goodloading</b></a>
+                                                <b>Try ShippingOpt</b></a>
                                         </div>
 
                                     </Col>
                                     <Col span={12}>
-                                        <Image src={func1} />
+                                        <Image src={one} />
                                     </Col>
                                 </Row>
                             </div>
@@ -250,7 +248,7 @@ export default function Home() {
                                 <Row gutter={10}>
 
                                     <Col span={12} offset={3}>
-                                        <Image src={func2} />
+                                        <Image src={two} />
                                     </Col>
                                     <Col span={6} >
                                         <div className={styles.divFeature} >
@@ -260,7 +258,7 @@ export default function Home() {
                                                 The application may suggest selecting a smaller vehicle or container
                                             </p>
                                             <a className={styles.hoverUnderlineAnimation} href="#">
-                                                <b>Try Goodloading</b></a>
+                                                <b>Try ShippingOpt</b></a>
                                         </div>
 
                                     </Col>
@@ -276,12 +274,12 @@ export default function Home() {
                                                 the risk of errors.
                                             </p>
                                             <a className={styles.hoverUnderlineAnimation} href="#">
-                                                <b>Try Goodloading</b></a>
+                                                <b>Try ShippingOpt</b></a>
                                         </div>
 
                                     </Col>
                                     <Col span={12}>
-                                        <Image src={func3} />
+                                        <Image src={three} />
                                     </Col>
                                 </Row>
                             </div>
@@ -290,7 +288,7 @@ export default function Home() {
                                 <Row gutter={10}>
 
                                     <Col span={12} offset={3}>
-                                        <Image src={func4} />
+                                        <Image src={four} />
                                     </Col>
                                     <Col span={6} >
                                         <div className={styles.divFeature} >
@@ -298,7 +296,7 @@ export default function Home() {
                                             <p>It is easy to plan arrangement of loads without overloading vehicle axles.
                                             </p>
                                             <a className={styles.hoverUnderlineAnimation} href="#">
-                                                <b>Try Goodloading</b></a>
+                                                <b>Try ShippingOpt</b></a>
                                         </div>
 
                                     </Col>
@@ -312,7 +310,7 @@ export default function Home() {
                                 <Row >
                                     <Col span={24}>
                                         <div className={styles.hedingBlue}>
-                                            See how Goodloading works
+                                            See how ShippingOpt works
                                         </div>
                                     </Col>
                                 </Row>
@@ -321,7 +319,7 @@ export default function Home() {
                                     <Row>
                                         <Col span={12} offset={6}>
                                             <div style={{ textAlign: "center" }}>
-                                                <ReactPlayer url="https://youtu.be/jUR-zi3oTtY" />
+                                                <ReactPlayer url="https://youtu.be/kj7ixi2lqF4" />
                                             </div>
                                         </Col>
                                     </Row>
@@ -353,7 +351,7 @@ export default function Home() {
                                                     <Row>
                                                         <Col span={24}>
                                                             <div className={styles.card1Header}>
-                                                                <BsFillInboxesFill /> Goodloading
+                                                                <BsFillInboxesFill /> ShippingOpt
                                                             </div>
                                                         </Col>
                                                     </Row>
@@ -456,7 +454,7 @@ export default function Home() {
                                                     <Row>
                                                         <Col span={24}>
                                                             <div className={styles.card2Header}>
-                                                                <BsFillInboxesFill /> Goodloading Pro
+                                                                <BsFillInboxesFill /> ShippingOpt Pro
                                                             </div>
                                                         </Col>
                                                     </Row>
@@ -592,6 +590,7 @@ export default function Home() {
                         </section>
 
                         {/* Section 7 */}
+
                         <section id='priceList'>
                             <div style={{ backgroundColor: '#dbf9ff' }}>
 
@@ -599,7 +598,8 @@ export default function Home() {
                                     <Row >
                                         <Col span={24}>
                                             <div className={styles.hedingWhite} style={{ color: "#0076BE" }} >
-                                                <p> Price list for version &nbsp;<BsFillInboxesFill /> Goodloading Pro </p>
+                                                <p> Price list for version &nbsp;<BsFillInboxesFill /> ShippingOpt
+                                                    <Text style={{ color: 'chocolate' }}> Pro </Text></p>
                                             </div>
                                         </Col>
                                     </Row>
@@ -627,7 +627,7 @@ export default function Home() {
                                                 <div >
                                                     <Row gutter={15} align="bottom" >
                                                         <Col span={24} style={{ fontSize: "70px", color: '#98C1D9' }}>
-                                                            2 <Text style={{ fontSize: "20px", color: "#98C1D9" }}>EUR</Text>
+                                                            0 <Text style={{ fontSize: "20px", color: "#98C1D9" }}>USD</Text>
                                                         </Col>
                                                     </Row>
                                                     <Row>
@@ -688,7 +688,7 @@ export default function Home() {
                                                 <div >
                                                     <Row gutter={15} align="bottom" >
                                                         <Col span={24} style={{ fontSize: "70px", color: '#3D5A80' }}>
-                                                            20 <Text style={{ fontSize: "20px", color: "#3D5A80" }}>EUR</Text>
+                                                            0 <Text style={{ fontSize: "20px", color: "#3D5A80" }}>USD</Text>
                                                         </Col>
                                                     </Row>
                                                     <Row>
@@ -723,9 +723,9 @@ export default function Home() {
                                                                 <Option value="jack" className={styles.select} >
                                                                     1 user + 0 USD/month</Option>
                                                                 <Option value="lucy" className={styles.select}>
-                                                                    5 user + 20 USD/month</Option>
+                                                                    5 user + 0 USD/month</Option>
                                                                 <Option value="disabled" className={styles.select}>
-                                                                    10 user + 37 USD/month</Option>
+                                                                    10 user + 0 USD/month</Option>
                                                             </Select>
                                                         </Col>
                                                     </Row>
@@ -763,7 +763,7 @@ export default function Home() {
                                                 <div >
                                                     <Row gutter={15} align="bottom" >
                                                         <Col span={24} style={{ fontSize: "70px", color: "#293241" }}>
-                                                            17 <Text style={{ fontSize: "20px", color: "#293241" }}>EUR</Text>
+                                                            0 <Text style={{ fontSize: "20px", color: "#293241" }}>USD</Text>
                                                         </Col>
                                                     </Row>
                                                     <Row>
@@ -798,9 +798,9 @@ export default function Home() {
                                                                 <Option value="jack" className={styles.select} >
                                                                     1 user + 0 USD/month</Option>
                                                                 <Option value="lucy" className={styles.select}>
-                                                                    5 user + 20 USD/month</Option>
+                                                                    5 user + 0 USD/month</Option>
                                                                 <Option value="disabled" className={styles.select}>
-                                                                    10 user + 37 USD/month</Option>
+                                                                    10 user + 0 USD/month</Option>
                                                             </Select>
                                                         </Col>
                                                     </Row>
@@ -838,7 +838,7 @@ export default function Home() {
                                                 <div >
                                                     <Row gutter={15} align="bottom" >
                                                         <Col span={24} style={{ fontSize: "70px", color: '#EE6C4D' }}>
-                                                            13 <Text style={{ fontSize: "20px", color: '#EE6C4D' }}>EUR</Text>
+                                                            0 <Text style={{ fontSize: "20px", color: '#EE6C4D' }}>USD</Text>
                                                         </Col>
                                                     </Row>
                                                     <Row>
@@ -873,9 +873,9 @@ export default function Home() {
                                                                 <Option value="jack" className={styles.select}>
                                                                     1 user + 0 USD/month</Option>
                                                                 <Option value="lucy" className={styles.select}>
-                                                                    5 user + 20 USD/month</Option>
+                                                                    5 user + 0 USD/month</Option>
                                                                 <Option value="disabled" className={styles.select}>
-                                                                    10 user + 37 USD/month</Option>
+                                                                    10 user + 0 USD/month</Option>
                                                             </Select>
                                                         </Col>
                                                     </Row>

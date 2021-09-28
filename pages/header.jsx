@@ -3,7 +3,6 @@ import 'antd/dist/antd.css';
 import styles from "../styles/home.module.css";
 import { BsFillInboxesFill } from 'react-icons/bs';
 import Link from "next/link";
-import { Link as Lnk, animateScroll as scroll } from 'react-scroll'
 
 
 const { Header } = Layout;
@@ -16,35 +15,39 @@ export default function Head() {
 
                     <Row style={{ textAlign: "center" }}>
 
-                        <Col span={6} onClick={() => scroll.scrollToTop()}>
+                        <Col span={6} >
+                            {/* onClick={() => scroll.scrollToTop()} */}
                             <Link href="/" >
-                                <a style={{ color: '#0090D1' }}> <BsFillInboxesFill /> Goodloading </a>
+                                <a style={{ color: '#0090D1' }}> <BsFillInboxesFill /> ShippingOpt </a>
                             </Link>
                         </Col>
 
-                        <Col span={2} offset={4} >
-                            <Lnk to="priceList" smooth={true} className={styles.pages}>
-                                price list</Lnk>
+                        <Col span={2} offset={8} >
+                            <Link href='/#priceList'>
+                                <a className={styles.pages}>price list</a>
+                            </Link>
                         </Col>
 
                         <Col span={2} >
                             <Link href="/instruction" >
-                                <Lnk to="/instruction" smooth={true} className={styles.pages} onClick={() => scroll.scrollToTop()}>
-                                    instruction</Lnk>
+                                <a className={styles.pages}>instruction</a>
                             </Link>
-
                         </Col>
 
-                        <Col span={2} className={styles.pages}>blog</Col>
+                        {/*<Col span={2} className={styles.pages}>blog</Col>
 
-                        <Col span={2} className={styles.pages}>integration</Col>
-
-                        <Col span={2} className={styles.pages}>faq</Col>
+                        <Col span={2} className={styles.pages}>integration</Col> */}
 
                         <Col span={2} >
-                            <Lnk to="contact" smooth={true} className={styles.pages}>
-                                contact
-                            </Lnk>
+                            <Link href="/faq" >
+                                <a className={styles.pages}>faq</a>
+                            </Link>
+                        </Col>
+
+                        <Col span={2} >
+                            <Link href='/#contact'>
+                                <a className={styles.pages}>contact</a>
+                            </Link>
                         </Col>
 
                         <Col span={2}><Button shape="round" className={styles.btn}>

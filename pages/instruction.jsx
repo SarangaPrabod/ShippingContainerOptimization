@@ -3,15 +3,15 @@ import Footer from "./footer";
 import 'antd/dist/antd.css';
 import styles from '../styles/instruction.module.css';
 import { Col, Row } from "antd";
+import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
-import { Link as Lnk } from 'react-scroll'
-
+// import { Link as Lnk } from 'react-scroll'
 import { FaChevronRight } from 'react-icons/fa'
 
-
 import pro from "../public/instruction/pro.png"
-import reg1 from "../public/instruction/reg1.jpg"
-import reg2 from "../public/instruction/reg2.png"
+import one from "../public/one.png"
+import two from "../public/two.png"
+import three from "../public/three.png"
 
 
 export default function Instruction() {
@@ -44,13 +44,30 @@ export default function Instruction() {
                                     <Col offset={1} style={{ padding: '0 0 20px 0' }}>
 
                                         <h4 className={styles.h4}>
-                                            <Lnk to="registration" smooth={true} style={{ color: '#242425' }} >
-                                                <FaChevronRight style={{ color: '#0076BE' }} /> logging in and registration
-                                            </Lnk>
+                                            <Link href="#registration">
+                                                <a style={{ color: '#242425' }}>
+                                                    <FaChevronRight style={{ color: '#0076BE' }} /> logging in and registration
+                                                </a>
+                                            </Link>
                                         </h4>
 
+                                        <h4 className={styles.h4}>
+                                            <Link href="#selection">
+                                                <a style={{ color: '#242425' }}>
+                                                    <FaChevronRight style={{ color: '#0076BE' }} /> selection of loading space
+                                                </a>
+                                            </Link>
+                                        </h4>
 
                                         <h4 className={styles.h4}>
+                                            <Link href="#axel">
+                                                <a style={{ color: '#242425' }}>
+                                                    <FaChevronRight style={{ color: '#0076BE' }} /> adding axle loads
+                                                </a>
+                                            </Link>
+                                        </h4>
+
+                                        {/* <h4 className={styles.h4}>
                                             <Lnk to="selection" smooth={true} style={{ color: '#242425' }} >
                                                 <FaChevronRight style={{ color: '#0076BE' }} /> selection of loading space
                                             </Lnk>
@@ -60,7 +77,7 @@ export default function Instruction() {
                                             <Lnk to="axel" smooth={true} style={{ color: '#242425' }} >
                                                 <FaChevronRight style={{ color: '#0076BE' }} /> adding axle loads
                                             </Lnk>
-                                        </h4>
+                                        </h4> */}
 
                                         <h4 className={styles.h4}>
                                             <FaChevronRight style={{ color: '#0076BE' }} /> management of several semi-trailers
@@ -111,7 +128,7 @@ export default function Instruction() {
                                     Registration
                                 </h2>
                                 <p>
-                                    If you want to use Goodloading, logging in is required.
+                                    If you want to use ShippingOpt, logging in is required.
                                     If you do not have an account, please register.
                                     The registration is necessary to create an individual user profile.
                                 </p>
@@ -120,14 +137,14 @@ export default function Instruction() {
                                 </p>
 
                                 <p>
-                                    In order to register, click the Go button at goodloading.com.
+                                    In order to register, click the Go button at ShippingOpt.com.
                                     You will be redirected to the logon page.
                                     Click Register to start the registration process.
                                 </p>
 
                                 <Row>
                                     <Col style={{ padding: '20px 0 20px 0' }}>
-                                        <Image src={reg1} />
+                                        <Image src={one} />
                                     </Col>
                                 </Row>
 
@@ -212,7 +229,7 @@ export default function Instruction() {
 
                                 <Row>
                                     <Col style={{ padding: '20px 0 20px 0' }}>
-                                        <Image src={reg2} />
+                                        <Image src={two} />
                                     </Col>
                                 </Row>
 
@@ -290,7 +307,7 @@ export default function Instruction() {
 
                                 <Row>
                                     <Col style={{ padding: '20px 0 20px 0' }}>
-                                        <Image src={reg2} />
+                                        <Image src={three} />
                                     </Col>
                                 </Row>
 

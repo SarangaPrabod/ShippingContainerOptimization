@@ -1,0 +1,24 @@
+.header{
+    font-family: 'Roboto', sans-serif;
+    color:  #5B5B5B;
+    padding: 50px 0 10px 0;
+    font-size: 40px;
+}
+
+.panel{
+    font-family: 'Roboto', sans-serif;
+    color:  #5B5B5B;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.h{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.p{
+    font-weight:normal;
+    font-size: 15px; 
+}
