@@ -113,6 +113,7 @@
 .divFeature{
     color: #5B5B5B;
     font-size:15px;
+    padding: 0 0 30px;
 }
 
 .hoverUnderlineAnimation {
@@ -151,6 +152,7 @@
       background-color: #dbf9ff;
       border-radius: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: 550px;
   }
 
   .card1Header{
@@ -187,6 +189,7 @@
     background-color: #9545F7;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 550px;
 }
 
 .card2Header{
@@ -220,6 +223,7 @@
     text-align: center;
     background-color: #F0F2F5;
     border-radius: 10px;
+    height: 440px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -236,13 +240,13 @@
 }
 
 .contact{
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0px 30px 0px;
   background-color: #033E86;
   font-size: 15px;
   font-weight:normal;
   color: #F0F2F5;
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
+  
 }
 
 .link2{
@@ -276,5 +280,7 @@
   text-align: center;
   padding: 10px 0px 10px 0;
 }
+
+
 
 
