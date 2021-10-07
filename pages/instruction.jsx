@@ -123,7 +123,7 @@ export default function Instruction() {
 
                     <section id='registration'>
                         <Row>
-                            <Col span={24} style={{ padding: '80px 0 30px 0' }}>
+                            <Col span={24} style={{ padding: '80px 0 30px 0', textAlign: 'justify' }}>
                                 <h2 style={{ fontWeight: 'bold', padding: '0 0 20px 0' }}>
                                     Registration
                                 </h2>
@@ -168,7 +168,7 @@ export default function Instruction() {
 
                     <section id='selection'>
                         <Row>
-                            <Col span={24} style={{ padding: '80px 0 30px 0' }}>
+                            <Col span={24} style={{ padding: '80px 0 30px 0', textAlign: 'justify' }}>
                                 <h2 style={{ fontWeight: 'bold', padding: '0 0 20px 0' }}>
                                     Selection of loading space
                                 </h2>
@@ -245,7 +245,7 @@ export default function Instruction() {
 
                     <section id='axel'>
                         <Row>
-                            <Col span={24} style={{ padding: '80px 0 30px 0' }}>
+                            <Col span={24} style={{ padding: '80px 0 30px 0', textAlign: 'justify' }}>
                                 <h2 style={{ fontWeight: 'bold', padding: '0 0 20px 0' }}>
                                     <Image src={pro} />
                                     &nbsp; Axel loads

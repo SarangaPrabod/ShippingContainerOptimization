@@ -1,0 +1,38 @@
+
+.col{
+  text-align: center;
+  padding: 10px 0 10px;  
+}
+.item{
+ font-family: 'Roboto', sans-serif; 
+ font-size: medium;
+ font-weight: bolder;
+ color: #0090D1;
+
+}
+
+.item:hover{
+  color:#155eb6;
+  
+}
+
+.btn{
+  background-color: #F0F2F5;
+  color:  #0090D1;
+}
+
+.btn:hover{
+  background-color: #F0F2F5;
+  color:#155eb6;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobileVisible {
+    display: block;
+  }
+  
+  .mobileHidden {
+    display: none;
+  }
+}
+

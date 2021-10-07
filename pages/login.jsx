@@ -18,7 +18,7 @@ export default function LogIn() {
 
             <Row className={styles.asd}>
 
-                <Col span={12} style={{ backgroundColor: '#2278AD', color: '#F0F2F5' }} className={styles.div1}>
+                <Col sm={{ span: 24 }} md={{ span: 12 }} style={{ backgroundColor: '#2278AD', color: '#F0F2F5' }} className={styles.div1}>
                     <Row>
                         <Col span={20} offset={2} className={styles.logo}>
 
@@ -55,7 +55,7 @@ export default function LogIn() {
 
 
 
-                <Col span={12} style={{ backgroundColor: '#F0F2F5', color: '#6C6C6C' }}>
+                <Col sm={{ span: 24 }} xs={{ span: 24 }} md={{ span: 12 }} style={{ backgroundColor: '#F0F2F5', color: '#6C6C6C' }}>
                     <Row>
                         <Col span={12} offset={6} className={styles.login}>
                             Log in
@@ -74,6 +74,10 @@ export default function LogIn() {
                     <Row>
                         <Col span={12} offset={6}>
                             <Form
+
+                                grid={{
+                                    md: 1,
+                                }}
                                 name="basic"
                                 initialValues={{ remember: true }}
                                 autoComplete="off"
@@ -95,13 +99,13 @@ export default function LogIn() {
                                 </Form.Item>
 
                                 <Row>
-                                    <Col span={12}>
+                                    <Col xl={{ span: 12 }} >
                                         <Form.Item name="remember" >
                                             <Checkbox style={{ color: '#6C6C6C' }}>Remember me</Checkbox>
                                         </Form.Item>
                                     </Col>
 
-                                    <Col span={12} style={{ alignItems: 'end' }}>
+                                    <Col xl={{ span: 12 }} style={{ alignItems: 'end' }}>
                                         <Form.Item name="forgotPassword" >
                                             <a href="#" style={{ float: 'right' }}>
                                                 <u> Forgot password ?</u>

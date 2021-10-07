@@ -29,7 +29,7 @@ export default function LogIn() {
 
             <Row className={styles.asd}>
 
-                <Col span={12} style={{ backgroundColor: '#2278AD', color: '#F0F2F5' }} className={styles.div1}>
+                <Col sm={{ span: 24 }} md={{ span: 12 }} style={{ backgroundColor: '#2278AD', color: '#F0F2F5' }} className={styles.div1}>
                     <Row>
                         <Col span={20} offset={2} className={styles.logo}>
 
@@ -66,7 +66,7 @@ export default function LogIn() {
 
 
 
-                <Col span={12} style={{ backgroundColor: '#F0F2F5', color: '#6C6C6C' }}>
+                <Col sm={{ span: 24 }} xs={{ span: 24 }} md={{ span: 12 }} style={{ backgroundColor: '#F0F2F5', color: '#6C6C6C' }}>
                     <Row>
                         <Col span={12} offset={6} className={styles.login}>
                             Log in
@@ -91,7 +91,7 @@ export default function LogIn() {
                             >
                                 <Row gutter={10}>
 
-                                    <Col span={12}>
+                                    <Col lg={{ span: 12 }} md={{ span: 24 }} xs={{ span: 24 }}>
 
                                         <Form.Item
                                             name={['role']}
@@ -109,7 +109,7 @@ export default function LogIn() {
                                     </Col>
 
 
-                                    <Col span={12}>
+                                    <Col lg={{ span: 12 }} md={{ span: 24 }} xs={{ span: 24 }}>
                                         <Form.Item
                                             name={['country']}
                                             rules={[{ required: true, message: 'Country is required' }]}>
@@ -134,7 +134,7 @@ export default function LogIn() {
                                 </Form.Item>
 
                                 <Row gutter={10}>
-                                    <Col span={12}>
+                                    <Col lg={{ span: 12 }} md={{ span: 24 }} xs={{ span: 24 }}>
                                         <Form.Item
                                             name="password"
                                             rules={[{ required: true, message: 'Please input your password!' }]}
@@ -143,7 +143,7 @@ export default function LogIn() {
                                         </Form.Item>
                                     </Col>
 
-                                    <Col span={12}>
+                                    <Col lg={{ span: 12 }} md={{ span: 24 }} xs={{ span: 24 }}>
                                         <Form.Item
                                             name="re-password"
                                             rules={[{ required: true, message: 'Please input your password!' }]}
