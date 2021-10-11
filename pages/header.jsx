@@ -108,8 +108,9 @@ export default function Head() {
                                 <Drawer placement="right"
                                     onClose={onClose}
                                     visible={visible}
-                                    closable={false}>
-
+                                    closable={false}
+                                    onClick={() => setVisible(false)}
+                                >
                                     <Row>
 
                                         <Col span={24} className={styles1.col}

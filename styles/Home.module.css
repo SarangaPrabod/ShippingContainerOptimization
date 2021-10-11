@@ -31,6 +31,13 @@
   color: #155eb6;
 }
 
+.lnk{
+  color: #0090D1;
+}
+.lnk:hover{
+  color: #0090D1;
+}
+
 .btn{
     color: #0090D1;
     border-color: #0090D1;

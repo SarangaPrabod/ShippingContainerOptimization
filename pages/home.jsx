@@ -9,6 +9,7 @@ import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import ReactPlayer from "react-player/youtube";
 import Text from "antd/lib/typography/Text";
+import Link from "next/link";
 
 import img1 from "../public/1.png"
 import img2 from "../public/2.png"
@@ -245,7 +246,12 @@ export default function Home() {
                                                         and if there is any space left, plan an added load.
                                                     </p>
                                                     <a className={styles.hoverUnderlineAnimation} href="#">
-                                                        <b>Try ShippingOpt</b></a>
+                                                        <b>
+                                                            <Link href="/login">
+                                                                <a target="_blank" className={styles.lnk}>Try ShippingOpt</a>
+                                                            </Link>
+                                                        </b>
+                                                    </a>
                                                 </div>
 
                                             </Col>
@@ -268,8 +274,13 @@ export default function Home() {
                                                     <p style={{ textAlign: 'justify' }}>The program distributes loads by making the most of the space.
                                                         The application may suggest selecting a smaller vehicle or container
                                                     </p>
-                                                    <a className={styles.hoverUnderlineAnimation} href="#">
-                                                        <b>Try ShippingOpt</b></a>
+                                                    <a className={styles.hoverUnderlineAnimation} >
+                                                        <b>
+                                                            <Link href="/login">
+                                                                <a target="_blank" className={styles.lnk}>Try ShippingOpt</a>
+                                                            </Link>
+                                                        </b>
+                                                    </a>
                                                 </div>
 
                                             </Col>
@@ -285,7 +296,12 @@ export default function Home() {
                                                         the risk of errors.
                                                     </p>
                                                     <a className={styles.hoverUnderlineAnimation} href="#">
-                                                        <b>Try ShippingOpt</b></a>
+                                                        <b>
+                                                            <Link href="/login">
+                                                                <a target="_blank" className={styles.lnk}>Try ShippingOpt</a>
+                                                            </Link>
+                                                        </b>
+                                                    </a>
                                                 </div>
 
                                             </Col>
@@ -307,7 +323,12 @@ export default function Home() {
                                                     <p style={{ textAlign: 'justify' }}>It is easy to plan arrangement of loads without overloading vehicle axles.
                                                     </p>
                                                     <a className={styles.hoverUnderlineAnimation} href="#">
-                                                        <b>Try ShippingOpt</b></a>
+                                                        <b>
+                                                            <Link href="/login">
+                                                                <a target="_blank" className={styles.lnk}>Try ShippingOpt</a>
+                                                            </Link>
+                                                        </b>
+                                                    </a>
                                                 </div>
 
                                             </Col>
@@ -361,7 +382,7 @@ export default function Home() {
                                 <div >
                                     <Row>
                                         <Col span={16} offset={4}>
-                                            <Row gutter={50} style={{ textAlign: "center" }}>
+                                            <Row gutter={20} style={{ textAlign: "center" }}>
                                                 <Col lg={{ span: 12 }} md={{ span: 24 }} style={{ padding: '0 0px 40px 0' }}>
                                                     <div class={styles.card1}>
                                                         <div>
@@ -631,7 +652,7 @@ export default function Home() {
                                 <Row>
                                     <Col span={20} offset={2}>
                                         <div style={{ padding: '0px 0px 100px 0' }} >
-                                            <Row gutter={15}>
+                                            <Row gutter={20}>
 
                                                 <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 12 }} xs={{ span: 24 }}
                                                     style={{ padding: '0 0 20px' }}>

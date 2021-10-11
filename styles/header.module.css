@@ -26,12 +26,14 @@
   color:#155eb6;
 }
 
-@media only screen and (max-width: 768px) {
-  .mobileVisible {
-    display: block;
-  }
-  
+@media only screen and (max-width: 768px) {  
   .mobileHidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .mobileVisible {
     display: none;
   }
 }
