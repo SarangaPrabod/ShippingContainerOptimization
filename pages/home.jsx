@@ -264,10 +264,12 @@ export default function Home() {
                                     <div style={{ padding: '50px 0px 50px 0px' }}>
                                         <Row gutter={30}>
 
-                                            <Col lg={{ span: 12 }} md={{ span: 24 }}>
+                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 2 }}
+                                                sm={{ span: 24, order: 2 }} xs={{ span: 24, order: 2 }}>
                                                 <Image src={two} />
                                             </Col>
-                                            <Col lg={{ span: 12 }} md={{ span: 24 }}>
+                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 1 }}
+                                                sm={{ span: 24, order: 1 }} xs={{ span: 24, order: 1 }}>
                                                 <div className={styles.divFeature} >
                                                     <h2 style={{ color: "#5B5B5B", fontSize: "20px", fontWeight: 'bolder' }}>Optimal arrangement of
                                                         loads within the space</h2>
@@ -314,10 +316,12 @@ export default function Home() {
                                     <div style={{ padding: '50px 0px 50px 0px' }}>
                                         <Row gutter={30}>
 
-                                            <Col lg={{ span: 12 }} md={{ span: 24 }}>
+                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 2 }}
+                                                sm={{ span: 24, order: 2 }} xs={{ span: 24, order: 2 }}>
                                                 <Image src={four} />
                                             </Col>
-                                            <Col lg={{ span: 12 }} md={{ span: 24 }} >
+                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 1 }}
+                                                sm={{ span: 24, order: 1 }} xs={{ span: 24, order: 1 }}>
                                                 <div className={styles.divFeature} >
                                                     <h2 style={{ color: "#5B5B5B", fontSize: "20px", fontWeight: 'bolder' }}>Axle loads</h2>
                                                     <p style={{ textAlign: 'justify' }}>It is easy to plan arrangement of loads without overloading vehicle axles.
@@ -648,11 +652,10 @@ export default function Home() {
                                     </Row>
                                 </div>
 
-
                                 <Row>
                                     <Col span={20} offset={2}>
                                         <div style={{ padding: '0px 0px 100px 0' }} >
-                                            <Row gutter={20}>
+                                            <Row gutter={5}>
 
                                                 <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 12 }} xs={{ span: 24 }}
                                                     style={{ padding: '0 0 20px' }}>
