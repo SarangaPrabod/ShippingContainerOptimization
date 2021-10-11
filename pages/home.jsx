@@ -264,11 +264,11 @@ export default function Home() {
                                     <div style={{ padding: '50px 0px 50px 0px' }}>
                                         <Row gutter={30}>
 
-                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 2 }}
+                                            <Col lg={{ span: 12, order: 1 }} md={{ span: 24, order: 2 }}
                                                 sm={{ span: 24, order: 2 }} xs={{ span: 24, order: 2 }}>
                                                 <Image src={two} />
                                             </Col>
-                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 1 }}
+                                            <Col lg={{ span: 12, order: 2 }} md={{ span: 24, order: 1 }}
                                                 sm={{ span: 24, order: 1 }} xs={{ span: 24, order: 1 }}>
                                                 <div className={styles.divFeature} >
                                                     <h2 style={{ color: "#5B5B5B", fontSize: "20px", fontWeight: 'bolder' }}>Optimal arrangement of
@@ -316,11 +316,11 @@ export default function Home() {
                                     <div style={{ padding: '50px 0px 50px 0px' }}>
                                         <Row gutter={30}>
 
-                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 2 }}
+                                            <Col lg={{ span: 12, order: 1 }} md={{ span: 24, order: 2 }}
                                                 sm={{ span: 24, order: 2 }} xs={{ span: 24, order: 2 }}>
                                                 <Image src={four} />
                                             </Col>
-                                            <Col lg={{ span: 12 }} md={{ span: 24, order: 1 }}
+                                            <Col lg={{ span: 12, order: 2 }} md={{ span: 24, order: 1 }}
                                                 sm={{ span: 24, order: 1 }} xs={{ span: 24, order: 1 }}>
                                                 <div className={styles.divFeature} >
                                                     <h2 style={{ color: "#5B5B5B", fontSize: "20px", fontWeight: 'bolder' }}>Axle loads</h2>

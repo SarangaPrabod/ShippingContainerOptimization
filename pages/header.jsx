@@ -46,13 +46,13 @@ export default function Head() {
                                         <a className={styles.pages}>Price list</a>
                                     </Link>
                                     <Link href="/instruction" >
-                                        <a className={styles.pages}>instruction</a>
+                                        <a className={styles.pages}>Instruction</a>
                                     </Link>
                                     <Link href="/faq" >
-                                        <a className={styles.pages}>faq</a>
+                                        <a className={styles.pages}>FAQ</a>
                                     </Link>
                                     <Link href='/#contact'>
-                                        <a className={styles.pages}>contact</a>
+                                        <a className={styles.pages}>Contact</a>
                                     </Link>
                                     <Button shape="round" className={styles.btn}>
                                         <Link href="/login">
