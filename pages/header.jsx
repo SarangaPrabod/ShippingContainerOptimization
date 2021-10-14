@@ -33,7 +33,7 @@ export default function Head() {
                         <Col span={8} >
                             {/* onClick={() => scroll.scrollToTop()} */}
                             <Link href="/" >
-                                <a style={{ color: '#0090D1' }}> <BsFillInboxesFill /> ShippingOpt </a>
+                                <a style={{ color: '#2a9ce2', fontWeight: 'bold' }}> <BsFillInboxesFill /> ShippingOpt </a>
                             </Link>
                         </Col>
 

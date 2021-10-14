@@ -12,50 +12,49 @@
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-}
+  }
 
 .header{
-    background-color: #F0F2F5;
+    /* background-color: #212121;  */
+    background-color: black;
     font-size:larger;
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    color: #0090D1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .pages{
-  color: #0090D1;
+  color: #F0F2F5;
 }
 .pages:hover{
 
-  color: #155eb6;
-}
-
-.lnk{
-  color: #0090D1;
-}
-.lnk:hover{
-  color: #0090D1;
+  color: #BBBFCA;
 }
 
 .btn{
-    color: #0090D1;
-    border-color: #0090D1;
-    border-width:2px;
-    font-weight: bolder;
-    background-color: #F0F2F5;
+    color: #F0F2F5;
+    border-color: #F0F2F5;
+    border-width:1px;
+    background-color: #212121;
 
 }
 .btn:hover{
-    background-color:#0090D1;
+    background-color:#9c9ea5;
     color:#F0F2F5;
+    border: none;
 }
 
 .div1{
-    background-image:url("E:\Shipping Container Load Optimizer\shipping-container-load-optimizer\public\image1.jpg");
+    background-image:url("E:\Shipping Container Load Optimizer\shipping-container-load-optimizer\public\back.png");
     background-size: cover;
     background-position:center bottom;
     font-family: 'Roboto', sans-serif; 
+    height:100vh;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.7);
+  height:100vh;
+  vertical-align: middle
 }
 
 .title1{
@@ -72,9 +71,9 @@
     color: #F0F2F5;
     border-width:2px;
     font-weight:bold;
-    outline: none
+    outline: none;
+  }
 
-}
 .btnReg:hover {
     background: rgba(98, 178, 202, 0.4); 
     color:#F0F2F5;
@@ -123,16 +122,23 @@
     padding: 0 0 30px;
 }
 
+.lnk{
+  color: #686D76;
+}
+.lnk:hover{
+  color: #686D76;
+}
+
 .hoverUnderlineAnimation {
     display: inline-block;
     position: relative; 
-    color: #0090D1;
+    color: #686D76;
     font-size: "17px";
   }
 
   .hoverUnderlineAnimation:hover{
     text-decoration: none;
-    color: #0090D1;
+    color: #686D76;
   }
 
   .hoverUnderlineAnimation:after {
@@ -143,7 +149,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0090D1;
+    background-color: #686D76;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
   }
@@ -152,11 +158,11 @@
     transform: scalex(1);
     
     transform-origin: bottom left;
-    color: #0090D1;
+    color: #686D76;
   }
 
-  .card1{
-      background-color: #dbf9ff;
+  .card1{  
+      background-color: #C1C2C2;
       border-radius: 10px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       height: 550px;
@@ -166,7 +172,7 @@
     font-size:larger;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    color: #0090D1;
+    color: #22577A;
     padding: 30px 0px 0px 0px ;
   }
 
@@ -178,7 +184,7 @@
 }
 
   .hr{
-    background-color:#0090D1 ; 
+    background-color:#22577A ; 
     height: 1px;
     border: none;
     
@@ -192,8 +198,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.btn2{
+  color: #1d1b1b ;
+  background-color: #9c9ea5;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19)
+}
+
+.btn2:hover{
+  background-color:#495464;
+  color:#F0F2F5;
+  border: none;
+}
+
 .card2{
-    background-color: #9545F7;
+    background: #d4af3d;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 550px;
@@ -203,7 +222,7 @@
   font-size:larger;
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
-  color: #F0F2F5;
+  color: #22577A;
   padding: 30px 0px 0px 0px ;
 }
 
@@ -216,17 +235,30 @@
 
 .versions2{
   text-align: start;
-  color:#F0F2F5 ;
+  color:#494545 ;
   font-weight: normal;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
+}
+
+.btn3{
+  color: white;
+  background-color: #b8952c;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19)
+}
+
+.btn3:hover{
+  background-color:#a67c00;
+  color:#F0F2F5;
+  border: none;
 }
 
 .sec7{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: normal;
-    color: #0076BE;
+    color: #14274E;
     text-align: center;
     background-color: #F0F2F5;
     border-radius: 10px;
@@ -240,15 +272,28 @@
 
 .select{
   font-family: 'Roboto', sans-serif;
-  color:#0076BE;
+  color:#14274E;
   font-size: 15px;
   align-items: center;
 
 }
 
+.btn4{
+  color: white;
+  background-color: #495464;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19)
+}
+
+.btn4:hover{
+  background-color:#BBBFCA;
+  color:#495464;
+  border: none;
+}
+
 .contact{
   padding: 60px 0px 30px 0px;
-  background-color: #033E86;
+  background-color: #394867;
   font-size: 15px;
   font-weight:normal;
   color: #F0F2F5;
@@ -281,7 +326,7 @@
 }
 
 .footer{
-  background-color: #0076BE;
+  background-color: #212121;
   color: #F0F2F5;
   font-family: 'Roboto', sans-serif; 
   text-align: center;

@@ -57,52 +57,54 @@ export default function Home() {
                         {/* Section 1 */}
                         <section id='top'>
                             <div className={styles.div1}>
-                                <Row>
-                                    <Col span={10} offset={3}>
-                                        <div className={styles.title1}><p>
-                                            Optimal planing of cargo space</p>
-                                        </div>
-                                    </Col>
-                                </Row>
+                                <div className={styles.overlay}>
+                                    <Row>
+                                        <Col span={10} offset={3}>
+                                            <div className={styles.title1}><p>
+                                                Optimal planing of cargo space</p>
+                                            </div>
+                                        </Col>
+                                    </Row>
 
-                                <Row>
+                                    <Row>
 
-                                    <Col span={10} offset={3}>
-                                        <div className={styles.type1}>
-                                            Find out how to best arrange loads
-                                        </div>
-                                    </Col>
+                                        <Col span={10} offset={3}>
+                                            <div className={styles.type1}>
+                                                Find out how to best arrange loads
+                                            </div>
+                                        </Col>
 
-                                </Row>
+                                    </Row>
 
-                                <Row>
-                                    <Col span={10} offset={3}>
-                                        <div className={styles.type1}>
-                                            <Typewriter
-                                                options={{
-                                                    strings: [
-                                                        'on a truck',
-                                                        'in a container',
-                                                        'on a pallet or other space'
-                                                    ],
-                                                    autoStart: true,
-                                                    loop: true,
-                                                    delay: 100,
-                                                }}
-                                            />
-                                        </div>
-                                    </Col>
-                                </Row>
+                                    <Row>
+                                        <Col span={10} offset={3}>
+                                            <div className={styles.type1}>
+                                                <Typewriter
+                                                    options={{
+                                                        strings: [
+                                                            'on a truck',
+                                                            'in a container',
+                                                            'on a pallet or other space'
+                                                        ],
+                                                        autoStart: true,
+                                                        loop: true,
+                                                        delay: 100,
+                                                    }}
+                                                />
+                                            </div>
+                                        </Col>
+                                    </Row>
 
-                                <Row>
-                                    <Col span={10} offset={3}>
-                                        <div style={{ padding: '50px 0px 70px 0px' }}>
-                                            <Button shape="round" className={styles.btnReg}>
-                                                Free registration
-                                            </Button>
-                                        </div>
-                                    </Col>
-                                </Row>
+                                    <Row>
+                                        <Col span={10} offset={3}>
+                                            <div style={{ padding: '50px 0px 100px 0px' }}>
+                                                <Button shape="round" className={styles.btnReg}>
+                                                    Free registration
+                                                </Button>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
                             </div>
                         </section>
 
@@ -131,7 +133,7 @@ export default function Home() {
                         {/* Section 3 */}
                         <section id='clients'>
 
-                            <div style={{ backgroundColor: '#0090D1' }}>
+                            <div style={{ backgroundColor: '#495464' }}>
                                 <Row >
                                     <Col span={24}>
                                         <div className={styles.hedingBlue}>
@@ -347,7 +349,7 @@ export default function Home() {
 
                         {/* Section 5 */}
                         <section id='demo'>
-                            <div style={{ backgroundColor: "#0090D1" }}>
+                            <div style={{ backgroundColor: "#495464" }}>
                                 <Row >
                                     <Col span={24}>
                                         <div className={styles.hedingBlue}>
@@ -415,7 +417,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#0090D1'} size={20} />
+                                                                                    <FaCheck color={'#22577A'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -432,7 +434,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#0090D1'} size={20} />
+                                                                                    <FaCheck color={'#22577A'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -449,7 +451,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#0090D1'} size={20} />
+                                                                                    <FaCheck color={'#22577A'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -466,7 +468,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#0090D1'} size={20} />
+                                                                                    <FaCheck color={'#22577A'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -480,7 +482,7 @@ export default function Home() {
 
 
                                                                     <div style={{ padding: '111px 0px 20px 0px' }}>
-                                                                        <Button shape="round" className={styles.btn} >
+                                                                        <Button shape="round" className={styles.btn2} >
                                                                             Sign up
                                                                         </Button>
                                                                     </div>
@@ -507,7 +509,7 @@ export default function Home() {
                                                             <Row >
                                                                 <Col span={20} offset={2}>
                                                                     <div style={{ padding: '20px 0px 30px 0' }} >
-                                                                        <h3 className={styles.h3} style={{ color: "#F0F2F5" }}>
+                                                                        <h3 className={styles.h3} style={{ color: '#494545' }}>
                                                                             Choose the PRO version if you want to work
                                                                             with your own loads and vehicles.</h3>
                                                                     </div>
@@ -519,7 +521,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#F0F2F5'} size={20} />
+                                                                                    <FaCheck color={'#F0F2FF0F2F5'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -536,7 +538,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#F0F2F5'} size={20} />
+                                                                                    <FaCheck color={'#F0F2FF0F2F5'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -617,7 +619,7 @@ export default function Home() {
                                                                     </div>
 
                                                                     <div style={{ padding: '30px 0px 20px 0px' }}>
-                                                                        <Button shape="round" className={styles.btnReg} >
+                                                                        <Button shape="round" className={styles.btn3} >
                                                                             Go to pro version
                                                                         </Button>
                                                                     </div>
@@ -639,13 +641,14 @@ export default function Home() {
                         {/* Section 7 */}
 
                         <section id='priceList'>
-                            <div style={{ backgroundColor: '#dbf9ff' }}>
+                            <div style={{ backgroundColor: '#BBBFCA' }}>
 
                                 <div style={{ padding: '0px 0px 20px 0' }}>
                                     <Row >
                                         <Col span={20} offset={2}>
                                             <div className={styles.hedingWhite} style={{ color: "#0076BE" }} >
-                                                <p> Price list for version &nbsp;<BsFillInboxesFill /> ShippingOpt
+                                                <p> <Text style={{ color: '#393B44' }}>Price list for version </Text>
+                                                    &nbsp;<BsFillInboxesFill /> ShippingOpt
                                                     <Text style={{ color: 'chocolate' }}> Pro </Text></p>
                                             </div>
                                         </Col>
@@ -655,7 +658,7 @@ export default function Home() {
                                 <Row>
                                     <Col span={20} offset={2}>
                                         <div style={{ padding: '0px 0px 100px 0' }} >
-                                            <Row gutter={5}>
+                                            <Row gutter={9}>
 
                                                 <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 12 }} xs={{ span: 24 }}
                                                     style={{ padding: '0 0 20px' }}>
@@ -688,7 +691,7 @@ export default function Home() {
                                                             <Row>
                                                                 <Col span={20} offset={2}>
                                                                     <div style={{ padding: '10px 0px 15px 0px' }}>
-                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#14274E" }} />
                                                                     </div>
                                                                 </Col>
                                                             </Row>
@@ -707,7 +710,7 @@ export default function Home() {
 
                                                             <Row>
                                                                 <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
-                                                                    <Button shape="round" className={styles.btn} >
+                                                                    <Button shape="round" className={styles.btn4} >
                                                                         Register
                                                                     </Button>
                                                                 </Col>
@@ -750,7 +753,7 @@ export default function Home() {
                                                             <Row>
                                                                 <Col span={20} offset={2}>
                                                                     <div style={{ padding: '10px 0px 15px 0px' }}>
-                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#14274E" }} />
                                                                     </div>
                                                                 </Col>
                                                             </Row>
@@ -783,7 +786,7 @@ export default function Home() {
 
                                                             <Row>
                                                                 <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
-                                                                    <Button shape="round" className={styles.btn} >
+                                                                    <Button shape="round" className={styles.btn4} >
                                                                         Register
                                                                     </Button>
                                                                 </Col>
@@ -826,7 +829,7 @@ export default function Home() {
                                                             <Row>
                                                                 <Col span={20} offset={2}>
                                                                     <div style={{ padding: '10px 0px 15px 0px' }}>
-                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#14274E" }} />
                                                                     </div>
                                                                 </Col>
                                                             </Row>
@@ -859,7 +862,7 @@ export default function Home() {
 
                                                             <Row>
                                                                 <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
-                                                                    <Button shape="round" className={styles.btn} >
+                                                                    <Button shape="round" className={styles.btn4} >
                                                                         Register
                                                                     </Button>
                                                                 </Col>
@@ -902,7 +905,7 @@ export default function Home() {
                                                             <Row>
                                                                 <Col span={20} offset={2}>
                                                                     <div style={{ padding: '10px 0px 15px 0px' }}>
-                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#0076BE" }} />
+                                                                        <hr className={styles.hr2} style={{ backgroundColor: "#14274E" }} />
                                                                     </div>
                                                                 </Col>
                                                             </Row>
@@ -935,7 +938,7 @@ export default function Home() {
 
                                                             <Row>
                                                                 <Col span={24} style={{ padding: '30px 0px 50px 0px' }}>
-                                                                    <Button shape="round" className={styles.btn} >
+                                                                    <Button shape="round" className={styles.btn4} >
                                                                         Register
                                                                     </Button>
                                                                 </Col>
