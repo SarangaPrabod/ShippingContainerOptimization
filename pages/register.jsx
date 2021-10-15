@@ -69,7 +69,7 @@ export default function LogIn() {
                 <Col sm={{ span: 24 }} xs={{ span: 24 }} md={{ span: 12 }} style={{ backgroundColor: '#F0F2F5', color: '#6C6C6C' }}>
                     <Row>
                         <Col span={12} offset={6} className={styles.login}>
-                            Log in
+                            Register
                         </Col>
                     </Row>
 

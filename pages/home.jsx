@@ -53,13 +53,13 @@ export default function Home() {
 
 
                 <Content >
-                    <div className={styles.sec}>
+                    <div className={styles.sec} alignItems='center'>
                         {/* Section 1 */}
                         <section id='top'>
-                            <div className={styles.div1}>
+                            <div className={styles.div1} >
                                 <div className={styles.overlay}>
                                     <Row>
-                                        <Col span={10} offset={3}>
+                                        <Col span={14} offset={5}>
                                             <div className={styles.title1}><p>
                                                 Optimal planing of cargo space</p>
                                             </div>
@@ -68,7 +68,7 @@ export default function Home() {
 
                                     <Row>
 
-                                        <Col span={10} offset={3}>
+                                        <Col span={14} offset={5}>
                                             <div className={styles.type1}>
                                                 Find out how to best arrange loads
                                             </div>
@@ -77,7 +77,7 @@ export default function Home() {
                                     </Row>
 
                                     <Row>
-                                        <Col span={10} offset={3}>
+                                        <Col span={14} offset={5}>
                                             <div className={styles.type1}>
                                                 <Typewriter
                                                     options={{
@@ -96,10 +96,12 @@ export default function Home() {
                                     </Row>
 
                                     <Row>
-                                        <Col span={10} offset={3}>
+                                        <Col span={14} offset={5}>
                                             <div style={{ padding: '50px 0px 100px 0px' }}>
                                                 <Button shape="round" className={styles.btnReg}>
-                                                    Free registration
+                                                    <Link href="/register">
+                                                        <a target="_blank">Free registration</a>
+                                                    </Link>
                                                 </Button>
                                             </div>
                                         </Col>
@@ -521,7 +523,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#F0F2FF0F2F5'} size={20} />
+                                                                                    <FaCheck color={'#F0F2F5'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -538,7 +540,7 @@ export default function Home() {
 
                                                                             <Col span={4}>
                                                                                 <div style={{ alignItems: 'center' }}>
-                                                                                    <FaCheck color={'#F0F2FF0F2F5'} size={20} />
+                                                                                    <FaCheck color={'#F0F2F5'} size={20} />
                                                                                 </div>
                                                                             </Col>
                                                                             <Col span={20}>
@@ -618,7 +620,7 @@ export default function Home() {
                                                                         <hr className={styles.hr2} />
                                                                     </div>
 
-                                                                    <div style={{ padding: '30px 0px 20px 0px' }}>
+                                                                    <div style={{ padding: '30px 0px 60px 0px' }}>
                                                                         <Button shape="round" className={styles.btn3} >
                                                                             Go to pro version
                                                                         </Button>
@@ -668,7 +670,7 @@ export default function Home() {
                                                             <Col span={24}>
                                                                 <div style={{
                                                                     padding: '15px 0px 10px 0',
-                                                                    backgroundColor: "#98C1D9",
+                                                                    backgroundColor: "#567194",
                                                                     borderTopRightRadius: '10px',
                                                                     borderTopLeftRadius: '10px'
                                                                 }} >
@@ -679,8 +681,8 @@ export default function Home() {
                                                         </Row>
                                                         <div >
                                                             <Row gutter={15} align="bottom" >
-                                                                <Col span={24} style={{ fontSize: "70px", color: '#98C1D9' }}>
-                                                                    0 <Text style={{ fontSize: "20px", color: "#98C1D9" }}>USD</Text>
+                                                                <Col span={24} style={{ fontSize: "70px", color: '#567194' }}>
+                                                                    0 <Text style={{ fontSize: "20px", color: "#567194" }}>USD</Text>
                                                                 </Col>
                                                             </Row>
                                                             <Row>
@@ -806,7 +808,7 @@ export default function Home() {
                                                             <Col span={24}>
                                                                 <div style={{
                                                                     padding: '15px 0px 10px 0',
-                                                                    backgroundColor: "#293241",
+                                                                    backgroundColor: "#374661",
                                                                     borderTopRightRadius: '10px',
                                                                     borderTopLeftRadius: '10px'
                                                                 }} >
@@ -817,8 +819,8 @@ export default function Home() {
                                                         </Row>
                                                         <div >
                                                             <Row gutter={15} align="bottom" >
-                                                                <Col span={24} style={{ fontSize: "70px", color: "#293241" }}>
-                                                                    0 <Text style={{ fontSize: "20px", color: "#293241" }}>USD</Text>
+                                                                <Col span={24} style={{ fontSize: "70px", color: "#374661" }}>
+                                                                    0 <Text style={{ fontSize: "20px", color: "#374661" }}>USD</Text>
                                                                 </Col>
                                                             </Row>
                                                             <Row>
@@ -882,7 +884,7 @@ export default function Home() {
                                                             <Col span={24}>
                                                                 <div style={{
                                                                     padding: '15px 0px 10px 0',
-                                                                    backgroundColor: "#EE6C4D",
+                                                                    backgroundColor: "#293241",
                                                                     borderTopRightRadius: '10px',
                                                                     borderTopLeftRadius: '10px'
                                                                 }} >
@@ -893,8 +895,8 @@ export default function Home() {
                                                         </Row>
                                                         <div >
                                                             <Row gutter={15} align="bottom" >
-                                                                <Col span={24} style={{ fontSize: "70px", color: '#EE6C4D' }}>
-                                                                    0 <Text style={{ fontSize: "20px", color: '#EE6C4D' }}>USD</Text>
+                                                                <Col span={24} style={{ fontSize: "70px", color: '#293241' }}>
+                                                                    0 <Text style={{ fontSize: "20px", color: '#293241' }}>USD</Text>
                                                                 </Col>
                                                             </Row>
                                                             <Row>

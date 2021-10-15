@@ -27,7 +27,7 @@ export default function Head() {
                 <Header className={styles.header}>
 
 
-                    <Row style={{ textAlign: "center" }} >
+                    <Row style={{ textAlign: "center", verticalAlign: 'middle' }} >
 
 
                         <Col span={8} >

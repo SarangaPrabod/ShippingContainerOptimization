@@ -15,14 +15,13 @@
   }
 
 .header{
-    /* background-color: #212121;  */
-    background-color: black;
+    background-color: #212121; 
     font-size:larger;
     font-family: 'Roboto', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.pages{
+.pages{ 
   color: #F0F2F5;
 }
 .pages:hover{
@@ -49,12 +48,14 @@
     background-position:center bottom;
     font-family: 'Roboto', sans-serif; 
     height:100vh;
+    height: 100%;
+    text-align: center;
 }
 
 .overlay{
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7); 
   height:100vh;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .title1{
@@ -62,7 +63,7 @@
         font-family: 'Open Sans', sans-serif;
         color:  #F0F2F5;
         line-height: 1.2;
-        padding: 50px 0px 0px 0px ;
+        padding: 100px 0px 0px 0px ;
 
 }
 
@@ -326,7 +327,7 @@
 }
 
 .footer{
-  background-color: #212121;
+  background-color: black;
   color: #F0F2F5;
   font-family: 'Roboto', sans-serif; 
   text-align: center;
